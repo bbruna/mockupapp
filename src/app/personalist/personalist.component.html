@@ -1,0 +1,24 @@
+<div class="container">
+    <h3>Lista de personas</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>nombre</th>
+                <th>apellido</th>
+                <th>email</th>
+                <th>fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let per of getPersona" >                
+                <td>{{per.id}}</td>
+                <td>{{per.nombre}}</td>
+                <td>{{per.apellido}}</td>
+                <td>{{per.email}}</td>
+                <td>{{per.createAt}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button  rol="button" class="btn btn-success" (click)="funcionPrueba()">Probar</button>
+</div>
